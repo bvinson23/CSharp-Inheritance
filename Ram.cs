@@ -13,7 +13,7 @@ namespace Inheritance
 
         public override void Drive()
         {
-            Console.WriteLine("RRrrrrrummbbble!");
+            Console.WriteLine($"The {MainColor} Ram growls by you. RRrrrrrummbbble!");
         }
     }
 }

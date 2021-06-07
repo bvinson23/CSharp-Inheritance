@@ -13,7 +13,12 @@ namespace Inheritance
 
         public override void Drive()
         {
-            Console.WriteLine("Zoooooom!");
+            Console.WriteLine($"The {MainColor} Cessna soars overhead. Zoooooom!");
+        }
+
+        public override void Stop()
+        {
+            Console.WriteLine($"The {MainColor} Cessna rolls to a stop after rolling a mile down the runway.");
         }
     }
 }
