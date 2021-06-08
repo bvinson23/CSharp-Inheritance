@@ -2,9 +2,10 @@ using System;
 
 namespace Inheritance
 {
-    public class Ram : Vehicle // gas powered truck
+    public class Ram : Vehicle, IGasVehicles // gas powered truck
     {
         public double FuelCapacity { get; set; }
+        public int CurrentTankPercentage { get; set; }
 
         public void RefuelTank()
         {

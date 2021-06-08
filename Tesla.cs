@@ -2,9 +2,11 @@ using System;
 
 namespace Inheritance
 {
-    public class Tesla : Vehicle // Electric car
+    public class Tesla : Vehicle, IElectricVehicles // Electric car
     {
         public double BatteryKWh { get; set; }
+
+        public int CurrentChargePercentage { get; set; }
 
         public void ChargeBattery()
         {

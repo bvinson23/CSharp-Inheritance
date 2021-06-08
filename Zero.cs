@@ -2,9 +2,11 @@ using System;
 
 namespace Inheritance
 {
-    public class Zero : Vehicle // Electric motorcycle
+    public class Zero : Vehicle, IElectricVehicles// Electric motorcycle
     {
         public double BatteryKWh { get; set; }
+
+        public int CurrentChargePercentage { get; set; }
 
         public void ChargeBattery()
         {
